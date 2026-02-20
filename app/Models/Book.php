@@ -25,7 +25,7 @@ class Book extends Model
                                     'finished_at', 'is_finished', 'rating');
     }
 
-    public function genre(): BelongsToMany {
+    public function genres(): BelongsToMany {
         return $this->belongsToMany(
             Genre::class,
             'book_genre',

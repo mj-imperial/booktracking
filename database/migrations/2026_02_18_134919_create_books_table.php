@@ -16,7 +16,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('author')->nullable();
-            $table->foreignIdFor(Genre::class);
             $table->integer('num_of_pages');
             $table->timestamps();
         });
