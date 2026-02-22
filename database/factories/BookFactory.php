@@ -20,7 +20,8 @@ class BookFactory extends Factory
         return [
             'title' => fake()->words(rand(1,3), true),
             'author' => fake()->name(),
-            'num_of_pages' => fake()->numberBetween(250, 1500)
+            'num_of_pages' => fake()->numberBetween(250, 1500),
+            'image' => null
         ];
     }
 }

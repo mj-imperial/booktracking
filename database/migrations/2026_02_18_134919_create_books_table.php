@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('author')->nullable();
             $table->integer('num_of_pages');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
